@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Website Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- UIverse CSS -->
+    <link rel="stylesheet" href="uiverse.css">
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- Bottstap Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Box Icons CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css">
+    <!-- Animate.css CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script>
+        function btn(){
+            Swal.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: "Ordered!",
+                        text: "Your item has been ordered.",
+                        icon: "success"
+                    });
+                }
+            });
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="body_items">
+        <div class="item_1">
+            <img src="image/6.png" alt="">
+        </div>
+        <div class="item_2">
+            <img src="image/logo.png" alt="">
+        </div>
+        <div class="item_3">
+            <p>Just Do It</p>
+        </div>
+    </div>
+    <div class="container">
+        <nav>
+            <div class="left_nav">
+                <div class="nav_logo animate__animated animate__lightSpeedInLeft">
+                    <img src="image/logo.png" alt="">
+                </div>
+                <div class="nav_menu">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="link">HOME</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="man.html" class="link">MEN</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="woman.html" class="link">WOMEN</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">OWNER</a>
+                            <div class="link_border"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="righ_nav">
+                <div class="nav_cart_box">
+                    <i class="bx bx-cart"></i>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main -->
+    <div class="us text-center gap-0 column-gap-3">
+        <div class="card w-25">
+            <div class="card-info">
+                <div class="card-avatar1"></div>
+                <div class="card-title">Alfi Adriansyah</div>
+                <div class="card-subtitle">2350081106</div>
+                <hr> 
+                <div class="bi bi-envelope"> E-Mail</div>
+                <div style="font-size: 13px;">kehebatanHQQ@gmail.com</div>
+                <div class="bi bi-instagram"> Instagram</div>
+                <div style="font-size: 13px;">@holafiii_</div>
+            </div>
+        </div>
+        <div class="card w-25">
+            <div class="card-info">
+                <div class="card-avatar2"></div>
+                <div class="card-title">Razzan Haydar Fiqri</div>
+                <div class="card-subtitle">2350081111</div>
+                <hr> 
+                <div class="bi bi-envelope"> E-Mail</div>
+                <div style="font-size: 13px;">razzancindo@gmail.com</div>
+                <div class="bi bi-instagram"> Instagram</div>
+                <div style="font-size: 13px;">@razzan77_</div>
+            </div>
+        </div>
+        <div class="card w-25">
+            <div class="card-info">
+                <div class="card-avatar3"></div>
+                <div class="card-title">Wildan Wibowo</div>
+                <div class="card-subtitle">2350081117</div>
+                <hr> 
+                <div class="bi bi-envelope"> E-Mail</div>
+                <div style="font-size: 13px;">wildancipatat@gmail.com</div>
+                <div class="bi bi-instagram"> Instagram</div>
+                <div style="font-size: 13px;">@sloyero</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section id="cr" class="p-5" style="z-index: 7; position: relative;">
+        <div class="container">
+            <p class="text-center text-dark">Copyright &copy; 2024 NIKE OFFICIAL</p>
+        </div>
+    </section>
+
+    <!-- Tambahkan link ke Bootstrap JS dan jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+</body>
+</html>

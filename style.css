@@ -1,0 +1,163 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* BODY ITEMS */
+.item_1 img{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    z-index: 1;
+}
+
+.item_2 img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1000px;
+    width: 100%;
+    z-index: 2;
+    opacity: 0.1;
+}
+
+.item_3 p{
+    position: fixed;
+    top: 50%;
+    right: 60px;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    width: 200px;
+    opacity: 0.5;
+    z-index: 3;
+}
+
+.price{
+    font-family: 'Helvetica', sans-serif;
+}
+
+
+/* NAV BAR */
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6vw;
+    height: 120px;
+    line-height: 120px;
+    z-index: 4;
+}
+.left_nav{
+    display: flex;
+    gap: 50px;
+}
+.nav_logo{
+    display: flex;
+    align-items: center;
+}
+.nav_logo img{
+    width: 100px;
+}
+.nav_menu ul{
+    display: flex;
+    flex-direction: row;
+}
+ul li{
+    position: relative;
+    list-style: none;
+    margin: 0 30px;
+}
+.link{
+    text-decoration: none;
+    padding: 10px 0;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+}
+.nav_menu .link_border{
+    height: 1px;
+    width: 0;
+    position: absolute;
+    bottom: 43px;
+    left: 0;
+    background: #000;
+    transition: .4s ease-in-out;
+}
+.nav_menu ul li a:hover ~ .link_border{
+    width: 30px;
+}
+.nav_dropdown_menu{
+    display: none;
+}
+.right_nav{ 
+    display: flex;
+    gap: 50px;
+}
+.nav_cart_box{
+    display: none;
+}
+.menu_bars{
+    display: flex;
+    align-items: center;
+}
+.menu_bars_btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.menu_bars_btn img{
+    width: 30px;
+}
+.bar_1,.bar_2{
+    transition: .3s ease-in-out;
+}
+.menu_bars_btn:hover .bar_1{
+    margin-left: 5px;
+}
+.menu_bars_btn:hover .bar_2{
+    margin-right: 10px;
+}
+.nav_dropdown_menu{
+    display: none;
+}
+
+
+/* MAIN GAMBAR */
+.cont {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 5; 
+}
+#img1{
+    transform:  rotate(-35deg );
+}
+
+/* MAN WOMAN SEPATU */
+.card {
+    background-color: transparent !important;
+    border: none;
+}
+.card-body {
+    background-color: transparent !important;
+}
+.card-img-top {
+    height: 200px; 
+    object-fit: cover; 
+    width: 100%; 
+}
+.card-text{
+    font-family: 'Helvetica', sans-serif;
+}
